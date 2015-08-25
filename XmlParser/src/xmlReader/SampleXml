@@ -1,0 +1,50 @@
+<?version=1.0?>
+<!--This is just sample xml file-->
+<college>
+<Student><name>
+		<firstName>Shad</firstName>
+		<lastName>Hasan<lastName>
+	</name>
+	<age>22</age>
+</student>
+<Student>
+	<name>
+		<firstName>Anita</firstName>
+		<lastName>suryawanshi<lastName>
+	</name>
+	<age>23</age>
+</student>
+<Student>
+	<name>
+		<firstName>Vishwanath</firstName>
+		<lastName>Reddy<lastName>
+	</name>
+	<age>21</age>
+</student>
+<Staff>
+<faculty>
+	<id>
+		AP101
+	</id>
+	<department>
+		Applied Physics
+	</department>
+</faculty>
+<faculty>
+	<id>
+		AP102
+	</id>
+	<department>
+		Applied Physics
+	</department>
+</faculty>
+<faculty>
+	<id>
+		AC101
+	</id>
+	<department>
+		Applied Chemistry
+	</department>
+</faculty>
+</Staff>
+</college>
