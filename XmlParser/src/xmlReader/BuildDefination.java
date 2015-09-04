@@ -1,10 +1,8 @@
 package xmlReader;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 
 public class BuildDefination {
@@ -20,7 +18,7 @@ public class BuildDefination {
         try
         {
         	inputStream = new FileReader(filename);
-        	outputStream = new PrintWriter(new FileWriter("D:\\git2\\XmlParser\\src\\xmlReader\\OSampleXml"));
+        	outputStream = new PrintWriter(new FileWriter("D:\\git2\\XmlParser\\src\\xmlReader\\SampleXml"));
         	while ((c = (char)inputStream.read()) != (char)-1)
         		{
         		 
