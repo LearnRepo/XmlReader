@@ -5,16 +5,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class BuildDefination {
+public class LoadXML {
 	
 	// reader file
-	public BuildDefination(String filename) throws IOException
+	public LoadXML(String filename) throws IOException
 	{
 		FileReader inputStream=null;
 		PrintWriter outputStream=null;
 		char c;
-    	StringBuilder str = new StringBuilder();
-        
+    	String str = new String();
+        //Don't Go with this input output file mesh
         try
         {
         	inputStream = new FileReader(filename);
@@ -22,10 +22,11 @@ public class BuildDefination {
         	while ((c = (char)inputStream.read()) != (char)-1)
         		{
         		 
-        			if(c!=' '&&c!='\n'&&c!='\t')
-        			 str = str.append(c);
+        			if(c!=' '&&c!='\n'&&c!='\t'&&c!='\r')
+        			 str = str+c;
         		} 
         	outputStream.print(str);
+        	new FilterAttribute(str);
         }
         finally
         {
@@ -38,6 +39,7 @@ public class BuildDefination {
                  outputStream.close();
              }
         }
+        //Here "str" string you are looking for
 	}
 
 

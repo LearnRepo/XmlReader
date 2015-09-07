@@ -6,7 +6,7 @@ public class tester {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		new BuildDefination("D:\\git2\\XmlParser\\src\\xmlReader\\SampleXml");
+		new LoadXML("D:\\git2\\XmlParser\\src\\xmlReader\\OSampleXml");
 	}
 
 }
