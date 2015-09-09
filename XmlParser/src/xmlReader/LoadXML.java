@@ -26,6 +26,7 @@ public class LoadXML {
         			 str = str+c;
         		} 
         	outputStream.print(str);
+        	System.out.println(str.charAt(601));
         	new FilterAttribute(str);
         }
         finally

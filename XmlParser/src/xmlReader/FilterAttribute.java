@@ -36,7 +36,7 @@ public class FilterAttribute {
 				{
 					if(CommitAttribute.equals(str.substring(i,i+CommitAttribute.length())))
 					{
-						i+=CommitAttribute.length();
+						i+=(CommitAttribute.length()-1);
 						break;
 					}
 					else
@@ -47,6 +47,9 @@ public class FilterAttribute {
 				}
 				//Attribute Committed
 				System.out.println(Attribute+" "+AttributeData);
+				Attribute = "";
+				AttributeData = "";
+				CommitAttribute = "";
 			  }
 		}
 		else

@@ -1,3 +1,13 @@
+What is xml?
+
+- It is data organizing method in heirarichal manner in text file.
+
+
 LoadXML.java
 
-Load file for parse and remove space and next line character
+- Load file for parse and remove space and next line character("\t", "\n", " ", "\r")
+
+FilterAttribute.java
+
+- In loop manner it separate Attribute and its data.
+- It should be iterate again and again to find attribute and it data.
