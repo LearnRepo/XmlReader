@@ -18,7 +18,7 @@ public class LoadXML {
         try
         {
         	inputStream = new FileReader(filename);
-        	outputStream = new PrintWriter(new FileWriter("D:\\git2\\XmlParser\\src\\xmlReader\\SampleXml"));
+        	outputStream = new PrintWriter(new FileWriter(System.getProperty("user.dir")+"\\src\\xmlReader\\SampleXml"));
         	while ((c = (char)inputStream.read()) != (char)-1)
         		{
         		 
@@ -26,7 +26,7 @@ public class LoadXML {
         			 str = str+c;
         		} 
         	outputStream.print(str);
-        	System.out.println(str.charAt(601));
+        	//System.out.println(str.charAt(601));
         	new FilterAttribute(str);
         }
         finally
